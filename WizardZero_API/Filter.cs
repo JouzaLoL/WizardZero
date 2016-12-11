@@ -8,13 +8,13 @@ namespace WizardZero_API
     {
         private static readonly List<Rig> Rigs = Data.Rigs;
 
-        public static Rig GetRig(Config config)
+        public static List<Rig> GetRig(Config config)
         {
-            return Rigs.FirstOrDefault(x =>
+            return Rigs.Where(x =>
                 x.Price > config.price[0] && x.Price < config.price[1]
                 && (int)x.Use == config.use
                 && x.Tags.ContainsAllItems(config.tags)
-                );
+                ).ToList();
         }
 
         public static bool ContainsAllItems<T>(this List<T> a, List<T> b)

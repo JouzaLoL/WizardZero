@@ -83,8 +83,10 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="jquery.range.css" />
     <Content Include="script\jquery.range.js" />
     <Content Include="script\main.js" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

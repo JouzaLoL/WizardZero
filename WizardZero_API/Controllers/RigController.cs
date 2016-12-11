@@ -19,7 +19,6 @@ namespace WizardZero_API.Controllers
 
             Config config = Newtonsoft.Json.JsonConvert.DeserializeObject<Config>(Newtonsoft.Json.JsonConvert.SerializeObject(body));
             string response = Newtonsoft.Json.JsonConvert.SerializeObject(Filter.GetRig(config));
-            var rig = Filter.GetRig(config);
             return Request.CreateResponse(HttpStatusCode.OK, response);
         }
     }

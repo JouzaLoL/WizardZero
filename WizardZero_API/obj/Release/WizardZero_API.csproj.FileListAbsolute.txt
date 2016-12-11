@@ -25,3 +25,4 @@ C:\Users\vacek\OneDrive\Programovani\WizardZero_API\WizardZero_API\bin\System.We
 C:\Users\vacek\OneDrive\Programovani\WizardZero_API\WizardZero_API\bin\System.Web.Http.WebHost.xml
 C:\Users\vacek\OneDrive\Programovani\WizardZero_API\WizardZero_API\obj\Release\WizardZero_API.dll
 C:\Users\vacek\OneDrive\Programovani\WizardZero_API\WizardZero_API\obj\Release\WizardZero_API.pdb
+C:\Users\vacek\OneDrive\Programovani\WizardZero_API\WizardZero_API\obj\Release\WizardZero_API.csprojResolveAssemblyReference.cache
