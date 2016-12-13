@@ -93,7 +93,7 @@ function onFormChange() {
         }
     }
 
-    // "There's no going back..", hide the Back button after the user has selected Machine Use
+    // "There's no going back..", hide the Back button after the user has selected Machine Use and went ahead
     if (currentIndex > 1) {
         if ($("back").hasClass("visible")) {
             $("back").removeClass("visible");
@@ -114,7 +114,7 @@ function onFormChange() {
         }
     }
 
-    //Hide the Next button if selecting Machine Use, will be shown when user has Selected an option - onSelect()
+    //Hide the Next button when we get to the end
     if (getCurrentStep().attr("id") === "dokoncit") {
         if ($("next").hasClass("visible")) {
             $("next").removeClass("visible");
@@ -266,11 +266,11 @@ function displayResults(data) {
     results.append("<table></table>");
 
     var table = $('table');
-    table.append('<tr><th>Cena</th><th>Odkaz</th></tr>');
+    table.append('<tr><th>Cena</th><th>Odkaz</th><th>Tagy</th></tr>');
 
     for (var i = 0; i < data.length; i++) {
 
-        var tr = "<tr>" + "<td>" + formatNumber(data[i].Price) + " Kč" + "</td>" + "<td>" + '<a href="' + data[i].Url + '"> Odkaz </a>' + "</td>" + "</tr>";
+        var tr = "<tr>" + "<td>" + formatNumber(data[i].Price) + " Kč" + "</td>" + "<td>" + '<a href="' + data[i].Url + '"> Odkaz </a>' + "</td>" + "<td>" + data[i].Tags.toString().replace(",", ", ") + "</td>" + "</tr>";
         table.append(tr);
     }
 

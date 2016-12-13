@@ -1,9 +1,8 @@
 /* Pallete: http://paletton.com/#uid=33p0u0kiNn68--rdBshntirt4cU */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-body {
-    font-family: "Raleway", arial, verdana;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body { font-family: 'Open Sans', sans-serif; }
 
 #wrapper {
     margin: 0 auto;
@@ -17,10 +16,10 @@ body {
 }
 
 .form {
-    margin-top: 30px;
-    margin: 0 auto;
-    padding: 15px;
     border: solid 1px lightgray;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 15px;
 }
 
 header {
@@ -29,59 +28,55 @@ header {
     text-align: center;
 }
 
-#pouziti {
-    text-align: center;
-}
+#pouziti { text-align: center; }
 
 select {
-    padding: 3px;
-    margin-bottom: 20px;
+    background: #f8f8f8;
+    border: none;
     border-radius: 4px;
     box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    background: #f8f8f8;
     color: #888;
-    border: none;
-    outline: none;
-    display: inline-block;
     cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 3px;
 }
 
 .navigation {
+    margin-top: 10px;
     overflow: hidden;
     text-align: center;
-    margin-top: 10px;
 }
 
-.navigation>* {
-    padding: 4px;
-    font-weight: bold;
-    color: white;
+.navigation > * {
     background-color: #537F8D;
     border: solid 5px #537F8D;
     border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
     transition: 0.5s;
 }
 
-.navigation>*:hover {
+.navigation > *:hover {
     background-color: #083240;
     border: solid 5px #083240;
     cursor: pointer;
     transition: 0.5s;
 }
 
-next {
-    float: right;
-}
+next { float: right; }
 
 footer {
-    font-size: small;
     color: darkgrey;
+    font-size: small;
 }
 
 back {
-    float: left;
     background-color: #a9b7bb !important;
     border: solid 5px #a9b7bb !important;
+    float: left;
     transition: 0.5s;
 }
 
@@ -96,32 +91,27 @@ back {
 }
 
 @keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
 }
 
 .basic,
 .gaming,
-.workstation {
-    display: none;
-}
+.workstation { display: none; }
 
 .hidden {
     opacity: 0;
-    transition: 0.5s;
     /* Forbid the user from clicking on the hidden button */
     pointer-events: none;
+    transition: 0.5s;
 }
 
 .visible {
     opacity: 1;
-    transition: 0.5s;
     /* Reenable clicking */
     pointer-events: initial;
+    transition: 0.5s;
 }
 
 checkbox {
@@ -134,17 +124,15 @@ checkbox {
     pointer-events: none;
 }
 
-#dokoncit {
-    text-align: center;
-}
+#dokoncit { text-align: center; }
 
 finish {
-    padding: 4px;
-    font-weight: bold;
-    color: white;
     background-color: #537F8D;
     border: solid 5px #537F8D;
     border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
     transition: 0.5s;
 }
 
@@ -153,4 +141,13 @@ finish:hover {
     border: solid 5px #083240;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.result {
+    background: lightblue;
+
+}
+
+.result .price {
+    font-weight: bold;
 }

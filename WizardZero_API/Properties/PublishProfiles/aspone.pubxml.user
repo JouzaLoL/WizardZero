@@ -62,16 +62,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 03:03:46</publishTime>
     </File>
     <File Include="bin/WizardZero_API.dll">
-      <publishTime>12/11/2016 22:38:33</publishTime>
+      <publishTime>12/13/2016 21:14:11</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>12/08/2016 17:53:14</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>12/11/2016 17:42:22</publishTime>
+      <publishTime>12/13/2016 21:02:20</publishTime>
     </File>
     <File Include="jquery.range.css">
-      <publishTime>12/11/2016 16:44:30</publishTime>
+      <publishTime>11/12/2016 16:44:30</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>12/08/2016 17:53:28</publishTime>
@@ -80,10 +80,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/19/2016 12:12:27</publishTime>
     </File>
     <File Include="script/main.js">
-      <publishTime>12/11/2016 22:54:02</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="style.css">
-      <publishTime>12/11/2016 17:13:13</publishTime>
+      <publishTime>12/13/2016 21:03:51</publishTime>
+    </File>
+    <File Include="style/jquery.range.css">
+      <publishTime>12/11/2016 16:44:30</publishTime>
+    </File>
+    <File Include="style/style.css">
+      <publishTime>12/13/2016 21:12:58</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>12/09/2016 22:29:23</publishTime>
