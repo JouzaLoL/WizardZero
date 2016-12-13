@@ -260,12 +260,21 @@ function displayResults(data) {
     //clear the form
     form.empty();
 
-    var results = $(form.html('<div id="results"></div>'))[0];
-    var table = $(results.append($('<table style="width:100%">')))[0];
+    form.html('<div id="results"></div>');
+
+    var results = $('#results');
+    results.append("<table></table>");
+
+    var table = $('table');
     table.append('<tr><th>Cena</th><th>Odkaz</th></tr>');
 
     for (var i = 0; i < data.length; i++) {
 
-        table.append('<tr>');
+        var tr = "<tr>" + "<td>" + formatNumber(data[i].Price) + " Kč" + "</td>" + "<td>" + '<a href="' + data[i].Url + '"> Odkaz </a>' + "</td>" + "</tr>";
+        table.append(tr);
+    }
+
+    function formatNumber(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 }

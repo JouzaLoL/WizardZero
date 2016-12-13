@@ -1,8 +1,8 @@
 /* Pallete: http://paletton.com/#uid=33p0u0kiNn68--rdBshntirt4cU */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body { font-family: 'Open Sans', sans-serif; }
+body { font-family: "Raleway", arial, verdana; }
 
 #wrapper {
     margin: 0 auto;

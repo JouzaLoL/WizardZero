@@ -12,73 +12,85 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="logo">Wizard Hero</div>
-        <div class="form">
-            <div id="cena" class="step active">
-                <header>Zadejte prosím cenové rozpětí</header>
-                <input type="hidden" class="range-slider" value="23" />
-            </div>
-            <div id="pouziti" class="step">
-                <header>Na co plánujete počítač používat?</header>
-                <select>
-                    <option value="default"></option>
-                    <option value="basic">Základní použití - Internet, Email, Office</option>
-                    <option value="gaming">Hraní her</option>
-                    <option value="workstation">3D grafiku, Virtualizace, Náročené aplikace</option>
-                </select>
-            </div>
-            <div id="zaklad" class="basic">
-                <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
-                <checkbox>
-                    <input type="checkbox" name="hard_disk" value="false"> Plánuji na počítači uchovávat velké množství dat
-                    (250GB+)
-                </checkbox>
-                <checkbox>
-                    <input type="checkbox" name="silent" value="false"> Chci, aby byl počítač co nejtišší
-                </checkbox>
-            </div>
-            <div id="hry" class="gaming">
-                <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
-                <checkbox>
-                    <input type="checkbox" name="vr" value="false"> Chci virtuální realitu
-                </checkbox>
-                <checkbox>
-                    <input type="checkbox" name="4k" value="false"> Hraju jedině ve 4K HD
-                </checkbox>
-            </div>
-            <div id="stanice" class="workstation">
-                <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
-                <checkbox>
-                    <input type="checkbox" name="hard_disk" value="false"> Plánuji na počítači uchovávat velké množství dat
-                    (250GB+)
-                </checkbox>
-                <checkbox>
-                    <input type="checkbox" name="virtualization" value="false"> Pracuji s virtuálními počítači / servery
-                </checkbox>
-                <checkbox>
-                    <input type="checkbox" name="graphics" value="false"> Moje práce zahrnuje práci s 3D grafikou, úpravu
-                    klipů, CAD atd.
-                </checkbox>
-            </div>
-            <div id="doladeni" class="step">
-                <header>Finální doladění..</header>
-                <checkbox>
-                    <input type="checkbox" name="wifi" value="false"> K internetu se chci připojovat bezdrátově
-                </checkbox>
-            </div>
-            <div id="dokoncit" class="step">
-                <header>Máme vše, co potřebujeme!</header>
-                <finish>Dokončit a odeslat</finish>
-            </div>
-            <div class="navigation">
-                <back class="hidden">Zpět</back>
-                <next class="visible">Pokračovat</next>
-                <div style="clear:both; display: none;"></div>
-            </div>
+<div id="wrapper">
+    <div class="logo">Wizard Hero</div>
+    <div class="form">
+        <div id="cena" class="step active">
+            <header>Zadejte prosím cenové rozpětí</header>
+            <input type="hidden" class="range-slider" value="23"/>
         </div>
-        <footer>Wizard - Josef Vacek 2016</footer>
+        <div id="pouziti" class="step">
+            <header>Na co plánujete počítač používat?</header>
+            <select>
+                <option value="default"></option>
+                <option value="basic">Základní použití - Internet, Email, Office</option>
+                <option value="gaming">Hraní her</option>
+                <option value="workstation">3D grafiku, Virtualizace, Náročené aplikace</option>
+            </select>
+        </div>
+        <div id="zaklad" class="basic">
+            <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
+            <checkbox>
+                <input type="checkbox" name="hard_disk" value="false"> Plánuji na počítači uchovávat velké množství dat
+                (250GB+)
+            </checkbox>
+            <checkbox>
+                <input type="checkbox" name="silent" value="false"> Chci, aby byl počítač co nejtišší
+            </checkbox>
+        </div>
+        <div id="hry" class="gaming">
+            <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
+            <checkbox>
+                <input type="checkbox" name="vr" value="false"> Chci virtuální realitu
+            </checkbox>
+            <checkbox>
+                <input type="checkbox" name="4k" value="false"> Hraju jedině ve 4K HD
+            </checkbox>
+        </div>
+        <div id="stanice" class="workstation">
+            <header>Pojďme váš počítač přizpůsobit vaším představám..</header>
+            <checkbox>
+                <input type="checkbox" name="hard_disk" value="false"> Plánuji na počítači uchovávat velké množství dat
+                (250GB+)
+            </checkbox>
+            <checkbox>
+                <input type="checkbox" name="virtualization" value="false"> Pracuji s virtuálními počítači / servery
+            </checkbox>
+            <checkbox>
+                <input type="checkbox" name="graphics" value="false"> Moje práce zahrnuje práci s 3D grafikou, úpravu
+                klipů, CAD atd.
+            </checkbox>
+        </div>
+        <div id="doladeni" class="step">
+            <header>Finální doladění..</header>
+            <checkbox>
+                <input type="checkbox" name="wifi" value="false"> K internetu se chci připojovat bezdrátově
+            </checkbox>
+        </div>
+        <div id="dokoncit" class="step">
+            <header>Máme vše, co potřebujeme!</header>
+            <finish>Dokončit a odeslat</finish>
+        </div>
+        <div class="navigation">
+            <back class="hidden">Zpět</back>
+            <next class="visible">Pokračovat</next>
+            <div style="clear: both; display: none;"></div>
+        </div>
     </div>
+    <footer>Wizard - Josef Vacek 2016</footer>
+    <div id="results">
+        <table style="width: 100%; display:none" >
+            <tr>
+                <th>Cena</th>
+                <th>Odkaz</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+            </tr>
+        </table>
+    </div>
+</div>
 </body>
 
 </html>

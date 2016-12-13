@@ -251,15 +251,26 @@ function finish() {
     //$(location).attr("href", "url_to_redirect_to"); //redirect the user
     //$("footer").append(JSON.stringify(parseData(), null, 4));
 
-
 }
 
 
 function displayResults(data) {
+
+    var form = $(".form");
     //clear the form
-    $(".form").empty();
+    form.empty();
+
+    form.html('<div id="results"></div>');
+
+    var results = $('#results');
+    results.append("<table></table>");
+
+    var table = $('table');
+    table.append('<tr><th>Cena</th><th>Odkaz</th></tr>');
 
     for (var i = 0; i < data.length; i++) {
-        console.log(data.length);
+
+        var tr = "<tr>" + "<td>" + data[i].price + "</td>" + "<td>" + data[i].url + "</td>" + "</tr>";
+        table.append(tr);
     }
 }
